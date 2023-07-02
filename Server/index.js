@@ -10,7 +10,7 @@ const app = express();
 async function startServer() {
   try {
     // Connect to the database
-    await db();
+     await db;
 
     // Continue with your server setup or other operations
     app.use(express.json());
