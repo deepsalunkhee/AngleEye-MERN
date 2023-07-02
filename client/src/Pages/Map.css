@@ -1,0 +1,47 @@
+.map-container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .leave-button {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #0779e4;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 9999;
+  }
+  
+  
+  /* Custom marker icon styles */
+  .leaflet-marker-icon {
+    background-color: #0779e4;
+    border-radius: 70%;
+    border: 2px solid #ffffff;
+  }
+  
+  .leaflet-popup-content-wrapper {
+    background-color: #0779e4;
+    color: #ffffff;
+    border-radius: 4px;
+  }
+  
+  .leaflet-popup-content {
+    margin: 8px;
+  }
+  
