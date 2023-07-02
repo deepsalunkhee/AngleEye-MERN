@@ -15,7 +15,7 @@ const Entry = () => {
 
   const handleCreateRoom = async () => {
     try {
-      const response = await axios.post('http://localhost:5000/room/create', {
+      const response = await axios.post('https://angle-eye-client.vercel.app/room/create', {
         userName: userName,
       });
       const { roomCode } = response.data;
@@ -33,7 +33,7 @@ const Entry = () => {
         const longitude = position.coords.longitude;
 
         axios
-          .post('http://localhost:5000/room/join', {
+          .post('https://angle-eye-client.vercel.app/room/join', {
             roomCode: roomCode,
             name: userName,
             latitude: latitude,

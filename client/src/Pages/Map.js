@@ -42,7 +42,7 @@ const Map = () => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get(`http://localhost:5000/room/roomData/${roomCode}`);
+      const response = await axios.get(`https://angle-eye-client.vercel.app/room/roomData/${roomCode}`);
       const userData = response.data.map((user) => ({ ...user, color: getRandomColor() }));
       setUsers(userData);
     } catch (error) {
@@ -58,7 +58,7 @@ const Map = () => {
         name: userName
       };
 
-      await axios.post('http://localhost:5000/room/leave', requestBody);
+      await axios.post('https://angle-eye-client.vercel.app/room/leave', requestBody);
 
       navigate('/');
     } catch (error) {
@@ -81,7 +81,7 @@ const Map = () => {
           "longitude": longitude,
         };
 
-        const response = await axios.post('http://localhost:5000/room/updateLocation', requestBody);
+        const response = await axios.post('https://angle-eye-client.vercel.app/room/updateLocation', requestBody);
         console.log('Location updated:', response.data);
       } catch (error) {
         console.error('Error updating location:', error);
