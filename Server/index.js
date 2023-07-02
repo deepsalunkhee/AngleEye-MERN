@@ -1,11 +1,12 @@
 const express=require('express');
 const cors=require('cors');
-const app=express();
-const port=5000;
+require('dotenv').config();
+const port=5000||process.env.base;
 const db=require('./DB');
 const roomRoutes=require('./Routes/roomRoutes');
 
 
+const app=express();
 app.use(cors());
 
 app.use(express.json());
