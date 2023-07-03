@@ -56,8 +56,8 @@
   }
 
   .leave-button {
-    bottom: 0.5rem;
-    right: 0.5rem;
+    bottom: 5rem;
+    right: 5rem;
     font-size: 12px;
   }
 }
@@ -69,8 +69,8 @@
   }
 
   .leave-button {
-    bottom: 1rem;
-    right: 1rem;
+    bottom: 3rem;
+    right: 3rem;
     font-size: 14px;
   }
 }
