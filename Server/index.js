@@ -12,7 +12,6 @@ async function startServer() {
     // Connect to the database
      await db;
 
-    // Continue with your server setup or other operations
     app.use(express.json());
     app.use(cors());
     app.get("/", (req, res) => {
@@ -20,7 +19,7 @@ async function startServer() {
     });
     app.use("/room", roomRoutes);
 
-    // Start the server
+    
     app.listen(port, () => {
       console.log(`Server is running on port ${port}`);
     });

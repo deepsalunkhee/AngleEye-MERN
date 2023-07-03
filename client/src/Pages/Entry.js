@@ -40,24 +40,24 @@ const Entry = () => {
             longitude: longitude,
           })
           .then((response) => {
-            // Handle successful response
+          
             console.log(response.data);
             setJoinedRoom(true);
           })
           .catch((error) => {
-            // Handle error
+            
             console.error('Error joining room:', error);
           });
       },
       (error) => {
-        // Handle geolocation error
+        
         console.error('Error getting location:', error);
       }
     );
   };
 
   const handleMapClick = () => {
-    navigate('/map', { state: { roomCode, userName } }); // Pass roomCode and userName as state in the navigate function
+    navigate('/map', { state: { roomCode, userName } }); 
   };
 
   return (

@@ -7,7 +7,7 @@ import 'leaflet/dist/leaflet.css';
 import { useNavigate } from 'react-router-dom';
 import './Map.css';
 
-// Custom marker icon
+
 const getRandomColor = () => {
   const colors = ['red', 'blue', 'green', 'orange', 'purple', 'pink', 'yellow'];
   return colors[Math.floor(Math.random() * colors.length)];

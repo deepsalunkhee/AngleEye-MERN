@@ -29,7 +29,7 @@ router.post('/create', async (req, res) => {
     const room = new Room({
       roomCode: roomCode,
       expitationTime: expirationTime,
-      // Include other fields as needed
+      
     });
 
     // Save the room to the database
@@ -54,9 +54,6 @@ router.post('/join', async (req, res) => {
         if(!room){
             return res.status(404).json({error:'Room not found'});
         }
-
-        // Check if the room has expired
-
 
         // Add the user to the room
         room.users.push({
@@ -133,8 +130,6 @@ router.get('/roomData/:roomCode', async (req, res) => {
 });
 
 //Updating the location of a user
-
-// Update user location
 router.post('/updateLocation', async (req, res) => {
   try {
     const { roomCode, name, latitude, longitude } = req.body;
@@ -151,7 +146,7 @@ router.post('/updateLocation', async (req, res) => {
       return res.status(400).json({ error: 'User not found in the room' });
     }
 
-    // Update the user's location
+    // Update the user location
     user.location.latitude = latitude;
     user.location.longitude = longitude;
 
