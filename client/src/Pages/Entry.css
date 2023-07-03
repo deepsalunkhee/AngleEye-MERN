@@ -1,96 +1,128 @@
-/* Entry.css */
-
 /* Global styles */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Entry page styles */
-  .entry-page {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #eaf2f8;
-  }
-  
-  /* Entry container styles */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Entry page styles */
+.entry-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #eaf2f8;
+}
+
+/* Entry container styles */
+.entry-container {
+  max-width: 400px;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Entry logo styles */
+.entry-logo {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: #0779e4;
+}
+
+/* Entry label styles */
+.entry-label {
+  display: block;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+/* Entry input styles */
+.entry-input {
+  width: 100%;
+  padding: 8px 12px;
+  margin-bottom: 16px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Entry button styles */
+.entry-button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  background-color: #0779e4;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Entry room code styles */
+.entry-room-code {
+  color: #000000;
+}
+
+.entry-note-card {
+  background-color: rgb(244, 243, 240);
+  padding: 16px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.entry-note {
+  color: #f5b102;
+  font-size: 14px;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
   .entry-container {
-    max-width: 400px;
-    padding: 40px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    padding: 20px;
   }
-  
-  /* Entry logo styles */
+
   .entry-logo {
-    text-align: center;
-    font-size: 32px;
-    font-weight: bold;
-    color: #0779e4;
+    font-size: 28px;
   }
-  
-  /* Entry label styles */
+
   .entry-label {
-    display: block;
-    margin-bottom: 10px;
-    color: #000000;
+    font-size: 14px;
   }
-  
-  /* Entry input styles */
+
   .entry-input {
-    width: 100%;
-    padding: 8px 12px;
-    margin-bottom: 16px;
-    border: 1px solid #cccccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+    font-size: 14px;
   }
-  
-  /* Entry button styles */
+
   .entry-button {
-    display: block;
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 16px;
-    background-color: #0779e4;
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: bold;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    font-size: 14px;
   }
-  
-  /* Entry room code styles */
-  .entry-room-code {
-    color: #000000;
+}
+
+@media (max-width: 480px) {
+  .entry-container {
+    max-width: 250px;
+    padding: 15px;
   }
-  
-  /* Media queries */
-  @media (max-width: 768px) {
-    .entry-container {
-      max-width: 300px;
-      padding: 20px;
-    }
-  
-    .entry-logo {
-      font-size: 28px;
-    }
-  
-    .entry-label {
-      font-size: 14px;
-    }
-  
-    .entry-input {
-      font-size: 14px;
-    }
-  
-    .entry-button {
-      font-size: 14px;
-    }
+
+  .entry-logo {
+    font-size: 24px;
   }
-  
+
+  .entry-label {
+    font-size: 12px;
+  }
+
+  .entry-input {
+    font-size: 12px;
+  }
+
+  .entry-button {
+    font-size: 12px;
+  }
+}

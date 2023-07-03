@@ -67,7 +67,7 @@ const Entry = () => {
         <label htmlFor="userName" className="entry-label">User Name:</label>
         <input type="text" id="userName" value={userName} onChange={handleUserNameChange} className="entry-input" />
         <button onClick={handleCreateRoom} className="entry-button">Create Room</button>
-
+  
         {(
           <div>
             <p className="entry-room-code">Room Code: {roomCode}</p>
@@ -77,9 +77,16 @@ const Entry = () => {
             {joinedRoom && <button onClick={handleMapClick} className="entry-button">Map</button>}
           </div>
         )}
+  
+        <div className="entry-note-card">
+          <p className="entry-note">
+            Note: Please enter your name before pressing "Join Room". Make sure your location is turned on, and after clicking "Join Room", please wait for a few seconds until the "Map" button appears.
+          </p>
+        </div>
       </div>
     </div>
   );
+  
 };
 
 export default Entry;
